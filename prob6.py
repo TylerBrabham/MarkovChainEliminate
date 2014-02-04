@@ -2,20 +2,6 @@
 # CS C281A Spring 2014
 # HW1 Prob6
 
-'''
-Function eliminate uses eliminate algorithm from text on arbitrary
-chains of length n, using elimination order starting from n and
-ending at 1.
-
-Algorithm can compute P(X_1 = a | X_n = b), where n is the length
-pf the chain. 
-
-It is assumed that each X_i can take only the values 0 and 1.
-
-Input to function is a matrix of transition probabilities, a value
-for a and a value for b.
-'''
-
 def eliminate(query_node,evidence_node,initial_dist,transition,query_val,evidence_val):
 	#Pick ordering. Do not include first node. Handle first node as special case.
 	ordering = range(2,evidence_node+1)
