@@ -1,5 +1,4 @@
 # Tyler Brabham
-# CS C281A Spring 2014
 # HW1 Prob6
 
 def eliminate(query_node,evidence_node,initial_dist,transition,query_val,evidence_val):
